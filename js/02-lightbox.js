@@ -15,4 +15,5 @@ galleryBox.onfullscreenchange('show.simplelightbox', function () {
     images.options.captionsDelay = 250;
     images.options.scrollZoom = false;
     images.options.scrollZoomFactor = 0;
+    console.log(images.options.captionsData);
 });
