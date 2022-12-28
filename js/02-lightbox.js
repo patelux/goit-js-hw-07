@@ -4,7 +4,7 @@ import { galleryItems } from './gallery-items.js';
 const galleryBox = document.querySelector('.gallery');
 
 let items = galleryItems.map(({ preview, original, description }) => {
-    return `<a class="gallery__item" href="${original}"><img class="gallery__image" src="${preview}" alt="${description}" /></a>`;
+    return `<li><a class="gallery__item" href="${original}"><img class="gallery__image" src="${preview}" alt="${description}" /></a></li>`;
 }).join('');
 
 galleryBox.insertAdjacentHTML('beforeend', items);
